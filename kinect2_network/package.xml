@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>kinect2_network</name>
+  <version>0.0.1</version>
+  <description>
+    The Kinect2_network metapackage porting to ubuntu 16.04.
+  </description>
+
+  <maintainer email="aaramirezd@gmail.com">Andrés Ramírez</maintainer>
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>opt_calibration</run_depend>
+  <run_depend>opt_utils</run_depend>
+  <run_depend>opt_msgs</run_depend>
+  <run_depend>bayes</run_depend>
+  
+  <export>
+    <metapackage/>
+  </export>
+</package>

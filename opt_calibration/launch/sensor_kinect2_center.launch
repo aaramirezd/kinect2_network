@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- SESSION ID: 1477918445 -->
+<launch>
+
+  <!-- Sensor parameters -->
+  <arg name="sensor_name"     default="kinect2_center" />
+
+  <!-- Launch sensor -->
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
+    <arg name="base_name"         value="$(arg sensor_name)" />
+    <arg name="publish_tf"       value="true" />
+  </include>
+
+  <!-- Publish a further transform 0 0 0 1.57079 -1.57079 0-->
+  <node pkg="tf" type="static_transform_publisher" name="$(arg sensor_name)_broadcaster_2" args="0 0 0 0 0 0 /$(arg sensor_name) /$(arg sensor_name)_link  100" />
+
+</launch>
