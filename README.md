@@ -24,4 +24,5 @@ Original Package  [Open_PTrack](https://github.com/OpenPTrack/open_ptrack), [Ope
 6. Clone this repository into your catkin workspace:
    - git clone https://github.com/aaramirezd/kinect2_network
    - Build opt_msgs (twice): catkin_make --pkg opt_msgs
+   - Make cfg files executables: chmod a+x detection/cfg/xxxxxxx.cfg, chmod a+x tracking/cfg/xxxxxxx.cfg 
    - Build all: catkin_make
