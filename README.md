@@ -22,5 +22,6 @@ Original Package  [Open_PTrack](https://github.com/OpenPTrack/open_ptrack), [Ope
 4. Install [Ceres Solver](http://ceres-solver.org/installation.html#linux):
 5. Install [Calibration Toolkit](https://github.com/iaslab-unipd/calibration_toolkit/tree/indigo_v0.3):
 6. Clone this repository into your catkin workspace:
+   - git clone https://github.com/aaramirezd/kinect2_network
    - Build opt_msgs (twice): catkin_make --pkg opt_msgs
    - Build all: catkin_make
